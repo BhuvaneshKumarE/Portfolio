@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhuvanesh Kumar Elumalai | Accounts Executive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #f7f9fc; color: #222; font-family: 'Segoe UI', sans-serif; }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3em);
+      background: linear-gradient(90deg,#1e90ff,#4682b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p { color: #555; }
+
+    nav a {
+      background: #fff;
+      color: #1e90ff;
+      border: 1px solid #1e90ff;
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #1e90ff;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(30,144,255,0.6);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 48px 30px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.7s ease-out;
+    }
+    section.visible { opacity: 1; transform: translateY(0); }
+
+    h2 {
+      color: #1e90ff;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 32px;
+      font-weight: bold;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border: 1px solid #dce3ea;
+      border-radius: 15px;
+      padding: 24px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(30,144,255,0.25);
+      transform: translateY(-6px);
+    }
+
+    .tab-btn {
+      transition: 0.3s;
+      background-color: #e5e7eb;
+      color: #1f2937;
+    }
+    .tab-btn.active {
+      background-color: #1e3a8a;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(30, 144, 255, 0.25);
+    }
+    .tab-btn:hover {
+      background-color: #2563eb;
+      color: #fff;
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg min-h-screen w-full flex flex-col justify-center items-center text-center">
+  <!-- Tie Icon -->
+  <i class="fas fa-user-tie text-5xl text-white mb-6"></i>
+
+  <!-- Name -->
+  <h1 class="text-4xl md:text-6xl font-bold mb-4">Bhuvanesh Kumar Elumalai</h1>
+
+  <!-- BK Circle -->
+  <div class="w-40 md:w-48 h-40 md:h-48 bg-blue-400 rounded-full shadow-2xl flex items-center justify-center text-5xl font-bold mb-4">
+    BK
+  </div>
+
+  <!-- Designation -->
+  <p class="text-xl md:text-2xl text-blue-100 mb-8">Executive Accounts</p>
+
+  <!-- Buttons -->
+  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+    <a href="#experience" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-full w-full sm:w-auto transition transform hover:scale-105">
+      View My Work
+    </a>
+    <a href="Bhuvanesh_Kumar_CV.pdf" download class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full w-full sm:w-auto transition transform hover:scale-105 hover:bg-white hover:text-blue-600">
+      Download CV
+    </a>
+  </div>
+</section>
+
+
+</body>
+</html>
+
+    <nav class="mt-8 flex justify-center gap-4 flex-wrap">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#competencies">Competencies</a>
+      <a href="#skills">Strengths</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Languages</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2><b>About Me</b></h2>
+    <p class="text-center max-w-3xl mx-auto text-gray-600 leading-relaxed">
+      With four years of accounting experience in a startup environment, I specialize in financial reporting,
+      bookkeeping, and managing payment gateway transactions. I provide valuable insights through financial
+      analysis and effective collaboration with other departments.
+    </p>
+  </section>
+
+
+ <!-- Experience Section -->
+<section id="experience">
+  <h2><b>Experience</b></h2>
+  <div class="card p-6 md:p-8 mt-6" rounded-lg shadow-md text-left">
+    <h3 class="text-xl font-semibold text-blue-600"> Executive Accounts</h3>
+    <p class="text-gray-600 mb-4">Testpress Tech Labs LLP, Chennai | Aug 2021 – Present</p>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Analyzed financial data to identify trends and provide recommendations for process improvements.</li>
+      <li>Managed and reconciled bank transactions and petty cash.</li>
+      <li>Monitored cash flow and provided regular updates to management.</li>
+      <li>Handled payment gateway transactions (Stripe, Razorpay, PayU, Chargebee).</li>
+      <li>Utilized Zoho Books for AP, AR, and general ledger.</li>
+      <li>Managed payroll processes using Zoho Payroll and greytHR.</li>
+      <li>Assisted with tax returns (GST, TDS, Income Tax) and sales tax filings.</li>
+      <li>Collaborated with auditors, banks, and cross-functional teams.</li>
+      <li>Maintained accurate financial statements (Balance Sheet, P&amp;L, Cash Flow).</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Core Competencies Section -->
+  <section id="competencies">
+    <h2><b>Core Competencies</b></h2>
+    <div class="max-w-4xl mx-auto">
+      <!-- Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 mt-6">
+        <button class="tab-btn text-sm md:text-base font-semibold px-4 py-2 rounded-full active" data-target="ap">Accounts Payable</button>
+        <button class="tab-btn text-sm md:text-base font-semibold px-4 py-2 rounded-full" data-target="ar">Accounts Receivable</button>
+        <button class="tab-btn text-sm md:text-base font-semibold px-4 py-2 rounded-full" data-target="bookkeeping">Bookkeeping</button>
+        <button class="tab-btn text-sm md:text-base font-semibold px-4 py-2 rounded-full" data-target="taxation">Taxation</button>
+        <button class="tab-btn text-sm md:text-base font-semibold px-4 py-2 rounded-full" data-target="payroll">Payroll</button>
+      </div>
+      <!-- Tab Panels -->
+      <div id="tab-content" class="card p-6 md:p-8 rounded-lg shadow-xl">
+        <div id="ap" class="tab-panel active">
+          <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center"><i class="fas fa-file-invoice-dollar text-2xl mr-3"></i>Accounts Payable</h3>
+          <ul class="space-y-2 text-slate-600 list-disc list-inside">
+            <li>Handled end-to-end accounts payable processes including invoice verification, updating in books, and vendor payments.</li>
+            <li>Ensured accurate and timely disbursement of vendor payments through online banking.</li>
+            <li>Maintained vendor records, reconciled statements, and resolved discrepancies promptly.</li>
+            <li>Utilized <strong class="text-blue-600">Zoho Books</strong> for invoice management and ledger reconciliation.</li>
+          </ul>
+        </div>
+        <div id="ar" class="tab-panel">
+          <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center"><i class="fas fa-hand-holding-usd text-2xl mr-3"></i>Accounts Receivable</h3>
+          <ul class="space-y-2 text-slate-600 list-disc list-inside">
+            <li>Managed customer invoicing, collections, and follow-ups to ensure timely receipt of dues.</li>
+            <li>Reconciled customer accounts and resolved billing/payment discrepancies.</li>
+            <li>Monitored outstanding receivables and prepared aging reports for management review.</li>
+            <li>Utilized <strong class="text-blue-600">HubSpot</strong> for tracking and reporting.</li>
+          </ul>
+        </div>
+        <div id="bookkeeping" class="tab-panel">
+          <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center"><i class="fas fa-book-open text-2xl mr-3"></i>Bookkeeping</h3>
+          <ul class="space-y-2 text-slate-600 list-disc list-inside">
+            <li>Maintained accurate financial records covering AP, AR, and payroll.</li>
+            <li>Handled reconciliation and settlements of payment gateways such as PayU, Razorpay, Stripe.</li>
+            <li>Assisted in month-end and year-end closing activities, preparing supporting schedules.</li>
+            <li>Supported audits by preparing and providing required documentation.</li>
+          </ul>
+        </div>
+        <div id="taxation" class="tab-panel">
+          <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center"><i class="fas fa-landmark text-2xl mr-3"></i>Taxation</h3>
+          <ul class="space-y-2 text-slate-600 list-disc list-inside">
+            <li>Assisted in preparation and filing of <strong class="text-blue-600">GST, TDS, and Income Tax returns</strong>.</li>
+            <li>Verified vendor invoices for tax compliance.</li>
+            <li>Maintained accurate documentation for tax audits.</li>
+            <li>Collaborated with auditors and tax consultants by providing necessary reports.</li>
+          </ul>
+        </div>
+        <div id="payroll" class="tab-panel">
+          <h3 class="font-bold text-xl mb-4 text-blue-700 flex items-center"><i class="fas fa-users text-2xl mr-3"></i>Payroll</h3>
+          <ul class="space-y-2 text-slate-600 list-disc list-inside">
+            <li>Processed monthly payroll with accurate and timely salary disbursement.</li>
+            <li>Managed statutory deductions including <strong class="text-blue-600">PF, ESI, and TDS</strong>.</li>
+            <li>Utilized <strong class="text-blue-600">greytHR</strong> for payroll processing and compliance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths & Tools -->
+  <section id="skills">
+    <h2><b>Strengths & Tools</b></h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-6" text-center">
+      <div class="card">Zoho Books</div>
+      <div class="card">Zoho Payroll</div>
+      <div class="card">HubSpot CRM</div>
+      <div class="card">Help Scout</div>
+      <div class="card">G Suite / MS Suite</div>
+      <div class="card">greytHR</div>
+      <div class="card">Basecamp</div>
+      <div class="card">Stripe / Razorpay / PayU / Chargebee</div>
+    </div>
+  </section>
+
+  <!-- Soft Skills -->
+  <section id="softskills">
+    <h2><b>Soft Skills</b></h2>
+    <div class="grid md:grid-cols-2 gap-6 mt-6" text-center">
+      <div class="card">High Learning Potential</div>
+      <div class="card">Team Work</div>
+      <div class="card">Team Builder</div>
+      <div class="card">Adaptable</div>
+      <div class="card">Responsible</div>
+      <div class="card">Multitasking</div>
+      <div class="card">Work Under Pressure</div>
+      <div class="card">Eye for Detail</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2><b>Education</b></h2>
+    <div class="card p-6 md:p-8 mt-6">
+      <i class="fas fa-university text-blue-600 text-2xl mb-3"></i>
+      <p><strong>Bachelor of Commerce</strong></p>
+      <p>Ramakrishna Mission Vivekananda College, India</p>
+      <p>June 2017 – June 2020</p>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages">
+    <h2><b>Languages</b></h2>
+    <div class="grid md:grid-cols-2 gap-6 mt-6 text-center">
+      <div class="card">Tamil (Native)</div>
+      <div class="card">English (Professional)</div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <h2><b>Hobbies</b></h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-6 text-center">
+      <div class="card">📚 Reading</div>
+      <div class="card">🎬 Watching films & TV series</div>
+      <div class="card">🥊 Boxing & Workouts</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2><b>Contact</b></h2>
+    <div class="space-y-2 text-center mt-6 text-gray-600">
+      <p>Email: <a href="mailto:bhuvaneshelumalai1999@gmail.com" class="text-blue-600">bhuvaneshelumalai1999@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919551141558" class="text-blue-600">+91 9551141558</a></p>
+      <p>Location: Chennai, India</p>
+    </div>
+  </section>
+
+
+  <!-- Scripts -->
+  <script>
+    // Tabs functionality
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        tabPanels.forEach(panel => panel.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+      });
+    });
+
+    // Scroll animations
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
